@@ -54,7 +54,7 @@ def tangent_line(f, x):
 if __name__ == '__main__':
     x0 = np.arange(-2, 2.5, 0.25)
     x1 = np.arange(-2, 2.5, 0.25)
-    X, Y = np.meshgrid(x0, x1)
+    X, Y = np.meshgrid(x0, x1) # 좌표 설정
     
     X = X.flatten()
     Y = Y.flatten()
