@@ -31,8 +31,8 @@ for i in range(iters_num):
     t_batch = t_train[batch_mask]
     
     # 기울기 계산
-    #grad = network.numerical_gradient(x_batch, t_batch)
-    grad = network.gradient(x_batch, t_batch)
+    grad1 = network.numerical_gradient(x_batch, t_batch) # 수치 미분
+    grad = network.gradient(x_batch, t_batch) # 오차역전법
     
     # 매개변수 갱신
     for key in ('W1', 'b1', 'W2', 'b2'):
