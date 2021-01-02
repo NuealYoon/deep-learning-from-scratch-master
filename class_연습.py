@@ -1,3 +1,5 @@
+# https://towardsdatascience.com/imagining-the-world-in-terms-of-classes-and-objects-fe04833a788c
+
 # Class for animals
 class Animal:
     category = "pets"
